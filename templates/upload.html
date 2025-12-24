@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Analyzer</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="upload-container">
+    <h1>📄 Research Paper & AI Detection Tool</h1>
+
+    <form action="/analyze" method="POST" enctype="multipart/form-data" target="_blank">
+
+        <label>Select File:</label>
+        <input type="file" name="file">
+
+        <label>Or Paste Text:</label>
+        <textarea name="text" placeholder="Paste your content here..."></textarea>
+
+        <label class="checkbox-row">
+            <input type="checkbox" name="allow_web" checked>
+            Enable Web Plagiarism Scan
+        </label>
+
+        <label class="checkbox-row">
+            <input type="checkbox" name="deep_citation">
+            Enable Deep Citation Scan (Research Papers Only)
+        </label>
+
+        <button type="submit">Analyze Document</button>
+    </form>
+</div>
+
+
+</body>
+</html>
