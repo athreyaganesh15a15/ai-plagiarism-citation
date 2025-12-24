@@ -1,0 +1,90 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Analysis Report - test_document.txt</title>
+        <style>
+            body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 40px; background-color: #f4f4f9; color: #333; }
+            .container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+            h1 { border-bottom: 2px solid #ddd; padding-bottom: 10px; color: #2c3e50; }
+            .dashboard { display: flex; justify-content: space-between; margin-bottom: 30px; background: #ecf0f1; padding: 20px; border-radius: 8px; }
+            .metric { text-align: center; }
+            .metric-val { font-size: 24px; font-weight: bold; display: block; }
+            .metric-label { font-size: 14px; color: #7f8c8d; text-transform: uppercase; }
+            
+            /* Highlighting Classes */
+            .ai-generated { color: #d63031; font-weight: 500; } /* Red Text */
+            
+            /* Base wrapper for normal text hover */
+            .text-wrapper { cursor: help; }
+            
+            /* Plagiarism Link Styling */
+            a.plagiarism-link { 
+                background-color: #ffeaa7; 
+                color: black; 
+                border-bottom: 2px solid #fdcb6e; 
+                text-decoration: none;
+                cursor: pointer;
+                transition: background-color 0.2s;
+            }
+            
+            a.plagiarism-link:hover {
+                background-color: #fdcb6e;
+                text-decoration: underline;
+            }
+
+            /* Citation Issues Styling */
+            .citation-issue {
+                background-color: #ffcccc;
+                border-left: 4px solid #e47c3c;
+                padding-left: 4px;
+            }
+            
+            .cit-link{
+                color: #c0392b;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            
+            .legend { margin-bottom: 20px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px; background: #fff; }
+            .dot { height: 10px; width: 10px; display: inline-block; border-radius: 50%; margin-right: 5px; }
+            
+            .document-content { line-height: 1.6; font-size: 16px; white-space: pre-wrap; }
+            .paragraph { margin-bottom: 15px; position: relative; padding: 5px; }
+            .paragraph:hover { background-color: #fafafa; }
+            .p-meta { font-size: 10px; color: #bdc3c7; position: absolute; left: -30px; top: 8px; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📄 Document Analysis Report</h1>
+            <p><strong>File:</strong> test_document.txt<br><strong>Date:</strong> 2025-12-12 21:20:36</p>
+            
+            <div class="dashboard">
+                <div class="metric">
+                    <span class="metric-val" style="color: #d63031">94.2%</span>
+                    <span class="metric-label">AI Score</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-val" style="color: #d63031">50.0%</span>
+                    <span class="metric-label">Plagiarism</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-val" style="color: #27ae60">0.0%</span>
+                    <span class="metric-label">Citation Issues</span>
+                </div>
+            </div>
+
+            <div class="legend">
+                <strong>Legend:</strong>&nbsp;&nbsp; 
+                <span class="dot" style="background: #d63031;"></span> <span style="color: #d63031">Red Text</span> = AI Generated &nbsp;|&nbsp; 
+                <span class="dot" style="background: #ffeaa7; border: 1px solid #fdcb6e;"></span> <span style="background: #ffeaa7">Yellow Highlight</span> = Plagiarized (Click to view source)
+            </div>
+
+            <div class="document-content">
+    <div class="paragraph ai-generated"><span class="p-meta">#1</span><span class="text-wrapper" title="🤖 AI Probability: 99.0%"><a href="https://en.wikipedia.org/wiki/Publication_of_Darwin%27s_theory" target="_blank" class="plagiarism-link" title="Source: https://en.wikipedia.org/wiki/Publication_of_Darwin%27s_theory&#10;🤖 AI Probability: 99.0%">Paragraph 1 — plagiarized (slightly modified Wikipedia text) The theory of evolution by natural selection,</a> first formulated by Charles Darwin in 1859, provides a scientific explanation for the diversity of life on Earth. It proposes that species evolve over generations through the inheritance of traits that improve an organism’s chances of survival and reproduction. Over long periods of time, these small genetic variations can accumulate and lead to the emergence of entirely new species.</span></div><div class="paragraph ai-generated"><span class="p-meta">#2</span><span class="text-wrapper" title="🤖 AI Probability: 99.0%">Paragraph 2 — AI-generated (original) Modern renewable energy systems are increasingly designed around the principle of distributed generation, where power is produced close to the point of consumption. This shift reduces transmission losses and improves grid resilience. As battery technology continues to advance, small communities can operate semi-independently from national grids, forming flexible micro-energy networks.</span></div><div class="paragraph ai-generated"><span class="p-meta">#3</span><span class="text-wrapper" title="🤖 AI Probability: 99.0%">Paragraph 3 — plagiarized (moderately edited Wikipedia text) Machine learning is a branch of artificial intelligence focused on creating systems that can learn from data. Instead of being explicitly programmed with rules, these algorithms develop models that identify patterns and make predictions. Applications of machine learning span many fields, including speech recognition, medical diagnosis, and financial forecasting.</span></div><div class="paragraph ai-generated"><span class="p-meta">#4</span><span class="text-wrapper" title="🤖 AI Probability: 70.0%">Paragraph 4 — mixed plagiarism + rewriting The Roman Empire reached its peak territorial extent under Emperor Trajan, but its administrative and economic pressures eventually contributed to long-term decline. Historians often debate whether internal instability or external threats played the larger role. Although the traditional narrative speaks of “fall,” many modern scholars view the transition as a gradual transformation rather than a sudden collapse.</span></div><div class="paragraph ai-generated"><span class="p-meta">#5</span><span class="text-wrapper" title="🤖 AI Probability: 99.0%">Paragraph 5 — AI-generated (original) Urban planners today face the challenge of designing cities that balance sustainability, affordability, and quality <a href="https://www.clarity.io/blog/how-can-zoning-policies-better-support-efficient-public-transport-networks-to-lower-ambient-air-pollution" target="_blank" class="plagiarism-link" title="Source: https://www.clarity.io/blog/how-can-zoning-policies-better-support-efficient-public-transport-networks-to-lower-ambient-air-pollution&#10;🤖 AI Probability: 99.0%">of life. New planning models emphasize walkable neighborhoods, green public transit, and mixed-use zoning. By</a> integrating environmental data into design processes, planners can predict urban heat patterns, reduce pollution, and build cities that adapt to climate change.</span></div><div class="paragraph ai-generated"><span class="p-meta">#6</span><span class="text-wrapper" title="🤖 AI Probability: 99.0%"><a href="https://www.britannica.com/science/photosynthesis" target="_blank" class="plagiarism-link" title="Source: https://www.britannica.com/science/photosynthesis&#10;🤖 AI Probability: 99.0%">Paragraph 6 — heavily plagiarized with small distortions Photosynthesis is the process used by plants</a> and certain microorganisms to convert light energy into chemical energy. During this reaction, carbon dioxide and water are transformed into sugars and oxygen. This mechanism not only fuels plant growth but also produces the oxygen that supports nearly all life on the planet.</span></div>
+            </div>
+        </div>
+    </body>
+    </html>
+    
